@@ -39,7 +39,7 @@ cd tale-ai
 npm install
 ```
 
-4. **Install Expo Go app on your smartphone**:
+3. **Install Expo Go app on your smartphone**:
 
 * [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=es_419)
 * [iOS](https://apps.apple.com/es/app/expo-go/id982107779)
