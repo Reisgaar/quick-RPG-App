@@ -1,29 +1,26 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+// EXPO
+import { Slot } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+// CONTEXTS
+import { GameProvider } from 'src/context/GameContext';
+import { AppSettingsProvider } from 'src/context/AppSettingsContext';
+
+// TRANSLATIONS
+import 'src/i18n';
+
+// COMPONENTS
+import Header from 'src/components/common/Header';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  if (!loaded) {
-    // Async font loading only occurs in development.
-    return null;
-  }
-
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+    return (
+        <AppSettingsProvider>
+            <GameProvider>
+                <SafeAreaView style={{ flex: 1 }}>
+                    <Header />
+                    <Slot />
+                </SafeAreaView>
+            </GameProvider>
+        </AppSettingsProvider>
+    );
 }

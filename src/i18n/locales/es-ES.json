@@ -1,0 +1,385 @@
+{
+    "appTitle": "Tale AI", 
+    "common": {
+        "cancel": "Cancelar",
+        "ok": "Aceptar",
+        "back": "Atrás"
+    },
+    "apiKey": {
+        "title": "Clave API",
+        "addKey": "Introduce tu clave API de OpenAI (chat GPT)",
+        "info": "La clave es necesaria para para activar la función de generación de historias con IA.",
+        "placeholder": "Tu clave API de OpenAI",
+        "saveButton": "Guardar clave API",
+        "getKeyLink": "Obtén tu clave API en la plataforma de OpenAI",
+        "keyStorageNotice": "Tu clave API se guarda solo localmente en tu dispositivo y nunca se comparte.",
+        "emptyKeyAlert": "La clave API no puede estar vacía.",
+        "errorSaving": "Error al guardar la clave API.",
+        "savedAlert": "¡Clave API guardada con éxito!",
+        "loading": "Cargando...",
+        "openLinkError": "No se pudo abrir el enlace."
+    },
+    "home": {
+        "title": "Bienvenido",
+        "howTo": "Cómo jugar",
+        "description": "Este es un simulador de rol generado por IA.",
+        "description2": "El juego será similar a uno de elige tu propia aventura.",
+        "description3": "Primero elige si quieres una historia corta o una larga.",
+        "description4": "Luego elegirás el tema y por último el personaje.",
+        "shortStory": "Historia corta",
+        "longStory": "Historia larga",
+        "pregeneratedCharacter": "Elegir personaje",
+        "customCharacter": "Crear personaje"
+    },
+    "tabs": {
+        "home": "Inicio",
+        "index": "Inicio",
+        "game": "Juego",
+        "character": "Personaje",
+        "inventory": "Inventario",
+        "settings": "Ajustes"
+    },
+    "themeSelect": {
+        "title": "Elige una temática"
+    },
+    "settings": {
+        "title": "Ajustes",
+        "subtitle": "Gestiona tu partida desde aquí.",
+        "apiKey": "Clave API",
+        "modifyApiKey": "Modificar clave API",
+        "clearApiKey": "Borrar clave API",
+        "clearApiKeyTitle": "Confirmar borrado",
+        "clearApiKeyConfirm": "¿Seguro que quieres borrar la clave API? Tendrás que introducirla de nuevo para usar la IA.",
+        "cancel": "Cancelar",
+        "ok": "Aceptar",
+        "language": "Idioma",
+        "theme": "Tema",
+        "light": "Claro",
+        "dark": "Oscuro"
+    },
+    "language": {
+        "en": "English",
+        "es": "Español",
+        "eu": "Euskera"
+    },
+    "themes": {
+        "adventure": "Aventuras",
+        "comedy": "Comedia",
+        "crime": "Crimen",
+        "cyberpunk": "Cyberpunk",
+        "fantasy": "Fantasía",
+        "historical": "Histórico",
+        "horror": "Terror",
+        "kids": "Infantil",
+        "mystery": "Misterio",
+        "romance": "Romántico",
+        "scifi": "Ciencia ficción",
+        "western": "Western"
+    },
+    "characterSelect": {
+        "title": "Elige tu personaje",
+        "enterName": "Ponle nombre a tu personaje",
+        "namePlaceholder": "El nombre de tu personaje es...",
+        "confirm": "Confirmar"
+    },
+    "characterCreation": {
+        "title": "Crea tu personaje",
+        "tip": "Elige sabiamente tus habilidades.",
+        "enterName": "Añade un nombre para tu personaje",
+        "namePlaceholder": "El nombre de tu personaje...",
+        "pointsLeft": "Puntos restantes: {{count}}",
+        "confirm": "Confirmar"
+    },
+    "attributes": {
+        "strength": "Fuerza",
+        "dexterity": "Destreza",
+        "intelligence": "Inteligencia",
+        "charisma": "Carisma",
+        "wisdom": "Sabiduría",
+        "constitution": "Constitución",
+        "STR": "Fuerza",
+        "DEX": "Destreza",
+        "INT": "Inteligencia",
+        "CHA": "Carisma",
+        "WIS": "Sabiduría",
+        "CON": "Constitución"
+    },
+    "characters": {
+        "mainCharacter": "Personaje principal",
+        "customCharacter": "Personaje creado",
+        "warrior": {
+            "name": "Guerrero",
+            "description": "Luchador fuerte y valiente."
+        },
+        "rogue": {
+            "name": "Pícaro",
+            "description": "Ladrón ágil e inteligente."
+        },
+        "mage": {
+            "name": "Mago",
+            "description": "Sabio portador de la magia."
+        },
+        "scientist": {
+            "name": "Científico",
+            "description": "Experto en tecnología e investigación."
+        },
+        "soldier": {
+            "name": "Soldado",
+            "description": "Especialista entrenado en combate."
+        },
+        "hacker": {
+            "name": "Hacker",
+            "description": "Maestro de la infiltración informática."
+        },
+        "detective": {
+            "name": "Detective",
+            "description": "Investigador hábil con sentidos agudos."
+        },
+        "survivor": {
+            "name": "Superviviente",
+            "description": "Ingenioso y determinado."
+        },
+        "exorcist": {
+            "name": "Exorcista",
+            "description": "Lucha contra fuerzas sobrenaturales."
+        },
+        "journalist": {
+            "name": "Periodista",
+            "description": "Busca la verdad mediante la investigación."
+        },
+        "suspect": {
+            "name": "Sospechoso",
+            "description": "Figura misteriosa con secretos."
+        },
+        "knight": {
+            "name": "Caballero",
+            "description": "Guerrero honorable del reino."
+        },
+        "scholar": {
+            "name": "Erudito",
+            "description": "Individuo sabio y culto."
+        },
+        "spy": {
+            "name": "Espía",
+            "description": "Experto en sigilo y espionaje."
+        },
+        "explorer": {
+            "name": "Explorador",
+            "description": "Siempre en busca de maravillas antiguas."
+        },
+        "treasure_hunter": {
+            "name": "Cazador de tesoros",
+            "description": "Codicioso pero valiente, persiguiendo gloria y riquezas."
+        },
+        "jungle_guide": {
+            "name": "Guía de la jungla",
+            "description": "Conoce cada hoja y piedra en la naturaleza salvaje."
+        },
+        "cursed_scholar": {
+            "name": "Erudito maldito",
+            "description": "Intelectual, pero perseguido por una antigua maldición."
+        },
+        "reckless_pilot": {
+            "name": "Piloto temerario",
+            "description": "Pilota cualquier cosa con seguridad cuestionable."
+        },
+        "class_clown": {
+            "name": "Payaso de la clase",
+            "description": "Siempre bromeando, incluso cuando no debería."
+        },
+        "awkward_sidekick": {
+            "name": "Compañero torpe",
+            "description": "Propenso a accidentes pero leal hasta el final."
+        },
+        "deadpan_sarcastic": {
+            "name": "Sarcastico mal",
+            "description": "Dice lo que otros piensan pero con sequedad."
+        },
+        "unlucky_magician": {
+            "name": "Mago desafortunado",
+            "description": "Realiza trucos que casi siempre salen mal."
+        },
+        "overconfident_hero": {
+            "name": "Héroe demasiado confiado",
+            "description": "Cree que es el protagonista, pero el caos le sigue."
+        },
+        "hardened_detective": {
+            "name": "Detective endurecido",
+            "description": "Conoce cada callejón sucio y secreto oscuro."
+        },
+        "rookie_officer": {
+            "name": "Agente novato",
+            "description": "Novato, ansioso por demostrar su valía."
+        },
+        "criminal_mastermind": {
+            "name": "Cerebro criminal",
+            "description": "Siempre diez pasos adelante de la ley."
+        },
+        "corrupt_cop": {
+            "name": "Policía corrupto",
+            "description": "Sabe cómo jugar con las reglas."
+        },
+        "informant": {
+            "name": "Informante",
+            "description": "Siempre escuchando y vendiendo información."
+        },
+        "netrunner": {
+            "name": "Netrunner",
+            "description": "Hacker de élite navegando realidades virtuales."
+        },
+        "street_samurai": {
+            "name": "Samurái callejero",
+            "description": "Guerrero cibernético de alquiler."
+        },
+        "techie": {
+            "name": "Técnico",
+            "description": "Ingeniero de gadgets de alta tecnología."
+        },
+        "fixer": {
+            "name": "Fixer",
+            "description": "Negociador astuto y conocedor de la calle."
+        },
+        "cyber_ghost": {
+            "name": "Fantasma cibernético",
+            "description": "Figura misteriosa perdida entre tecnología y mente."
+        },
+        "ranger": {
+            "name": "Explorador",
+            "description": "Arquero y rastreador experto."
+        },
+        "bard": {
+            "name": "Bardo",
+            "description": "Encantador intérprete y aventurero."
+        },
+        "inventor": {
+            "name": "Inventor",
+            "description": "Pionero de la innovación histórica."
+        },
+        "gladiator": {
+            "name": "Gladiador",
+            "description": "Luchador feroz de la arena."
+        },
+        "medium": {
+            "name": "Médium",
+            "description": "Se comunica con los muertos."
+        },
+        "occultist": {
+            "name": "Ocultista",
+            "description": "Practicante de conocimientos prohibidos."
+        },
+        "brainiac": {
+            "name": "Cerebrito",
+            "description": "Sabe la respuesta a todo."
+        },
+        "prankster": {
+            "name": "Bromista",
+            "description": "Siempre tramando algo travieso."
+        },
+        "athlete": {
+            "name": "Atleta",
+            "description": "Rápido y lleno de energía."
+        },
+        "artist": {
+            "name": "Artista",
+            "description": "Dibuja el mundo desde la imaginación."
+        },
+        "forensic": {
+            "name": "Forense",
+            "description": "Analiza evidencias con precisión."
+        },
+        "heartbreaker": {
+            "name": "Rompecorazones",
+            "description": "Amante magnético y esquivo."
+        },
+        "hopeless_romantic": {
+            "name": "Romántico empedernido",
+            "description": "Cree profundamente en el amor y el destino."
+        },
+        "poet": {
+            "name": "Poeta",
+            "description": "Expresa el amor a través de palabras y versos."
+        },
+        "charming_stranger": {
+            "name": "Extraño encantador",
+            "description": "Misterioso con una sonrisa deslumbrante."
+        },
+        "love_fighter": {
+            "name": "Luchador por amor",
+            "description": "Lucha por lo que (o a quien) ama."
+        },
+        "cyborg": {
+            "name": "Cyborg",
+            "description": "Mitad humano, mitad máquina con fuerza inmensa."
+        },
+        "pilot": {
+            "name": "Piloto",
+            "description": "Piloto de nave estelar con reflejos agudos."
+        },
+        "gunslinger": {
+            "name": "Pistolero",
+            "description": "Forajido o héroe, rápido con el gatillo."
+        },
+        "bounty_hunter": {
+            "name": "Cazarrecompensas",
+            "description": "Rastrea a los fugitivos más peligrosos."
+        },
+        "sheriff": {
+            "name": "Sheriff",
+            "description": "Hace cumplir la justicia en la frontera salvaje."
+        },
+        "saloon_star": {
+            "name": "Estrella del salon",
+            "description": "Intérprete carismático y astuto."
+        },
+        "tracker": {
+            "name": "Rastreador",
+            "description": "Conoce la tierra como la palma de su mano."
+        }  
+    },
+    "character": {
+        "title": "Tipo de personaje",
+        "selectPregen": "Selecciona el personaje de una lista:",
+        "create": "Crea tu personaje ajustando las estadísticas:"
+    },
+    "inventory": {
+        "title": "Inventario",
+        "noItems": "No tienes ningún objeto.",
+        "removeItemTitle": "Eliminar objeto",
+        "removeItemConfirm": "¿Quieres eliminar \"{{item}}\" de tu inventario?"
+    },
+    "game": {
+        "title": "Historia",
+        "loading": "Cargando aventura...",
+        "loadingKey": "Cargando clave de API...",
+        "noApiKey": "No se ha configurado la clave de API. Ve a configuración para añadirla.",
+        "generate": "Generar nueva historia",
+        "errorApi": "Error de la API de OpenAI",
+        "errorNetwork": "Error de red",
+        "tryAgain": "Intentar de nuevo",
+        "selectActionAgain": "Elije una acción de nuevo",
+        "reset": "Reiniciar",
+        "result": "Resultado",
+        "diceRoll": "Tirada",
+        "success": "Éxito",
+        "failure": "Fracaso",
+        "difficulty": "Dificultad",
+        "total": "Total",
+        "action": "Acción",
+        "remainingDecisions": "Decisiones restantes",
+        "theEnd": "Fin",
+        "thanksForPlaying": "Gracias por jugar.",
+        "exit": "Salir",
+        "exitMessage": "¿Seguro que quieres volver al inicio?"
+    },
+    "chatGpt": {
+        "systemMessage": "Eres un generador de historias interactivas para un juego de rol.",
+        "userPromptStart": "El personaje se llama {{name}}, es un o una {{class}}, y tiene estos atributos: {{attributes}}. Se encuentra en una historia de temática '{{theme}}'. Inicia una historia épica basada en esto.\n\nEl nombre del mundo, reino o ciudad que se mencione debe empezar por la letra {{initialLeter}} y contener las letras {{containingLetters}}.\n\nLa historia total se compondrá de un total de {{totalDecisions}} partes.\n\nPara que lleves el ritmo de desarrollo, utilizaremos una estructura dramática en 5 actos (exposición, acción ascendente, clímax, acción descendente y desenlace).\n\nEsta es la primera de {{totalDecisions}} decisiones, así que deja espacio para un desarrollo posterior.",
+        "userPromptAct1": "Continúa la historia con base en la decisión anterior: {{decision}}. La acción del personaje como resultado: {{result}}, con una tirada de {{roll}}.\n\nEsta es la decisión {{promptsRemaining}} de {{totalDecisions}}.\n\n Estamos en el acto de: exposición: se presenta la trama, los personajes y el contexto de la historia. Se establece el escenario y el conflicto principal.",
+        "userPromptAct2": "Continúa la historia con base en la decisión anterior: {{decision}}. La acción del personaje como resultado: {{result}}, con una tirada de {{roll}}.\n\nEsta es la decisión {{promptsRemaining}} de {{totalDecisions}}.\n\n Estamos en el acto de: acción ascendente: la historia avanza, introduciendo complicaciones y desarrollando el conflicto principal. La tensión aumenta a medida que se revela más información.",
+        "userPromptAct3": "Continúa la historia con base en la decisión anterior: {{decision}}. La acción del personaje como resultado: {{result}}, con una tirada de {{roll}}.\n\nEsta es la decisión {{promptsRemaining}} de {{totalDecisions}}.\n\n Estamos en el acto de: clímax: el punto culminante de la historia, donde la tensión es máxima y se resuelve el conflicto principal.",
+        "userPromptAct4": "Continúa la historia con base en la decisión anterior: {{decision}}. La acción del personaje como resultado: {{result}}, con una tirada de {{roll}}.\n\nEsta es la decisión {{promptsRemaining}} de {{totalDecisions}}.\n\n Estamos en el acto de: acción descendente: las consecuencias del clímax se desarrollan, la tensión disminuye y se revelan las ramificaciones del conflicto.",
+        "userPromptAct5": "Continúa la historia con base en la decisión anterior: {{decision}}. La acción del personaje como resultado: {{result}}, con una tirada de {{roll}}.\n\nEsta es la decisión {{promptsRemaining}} de {{totalDecisions}}.\n\n Estamos en el acto de: desenlace: se resuelve la historia, se cierra el conflicto principal y se muestra el resultado final.",
+        "userPrompt": "\n\nNo añadas títulos, ni apartados... solamente el texto narrativo. Al final del texto narrativo, plantea una única decisión del personaje con entre 2 y 3 opciones posibles en formato JSON con este esquema:\n\n```json\n{\n  \"options\": [\n    {\n      \"attribute\": \"XXX\",\n      \"difficulty\": 8-16,\n      \"description\": \"Descripción de la acción\"\n    }\n  ]\n}\n```\n\nLas habilidades son STR (fuerza), DEX (destreza), CON (constitución), WIS (sabiduría), INT (inteligencia) y CHA (carisma).\n\nLa dificultad debe corresponderse con la propia acción, siendo 8 una acción fácil y 16 una muy difícil.\n\nNo muestres las opciones en el texto, solo incluye el bloque JSON justo después de la narración.",
+        "userPromptEnd": "Esta será la última parte, debes terminar la historia con un final significativo y épico. En este caso, no generes más opciones. El único contenido JSON final debe ser:\n\n```json\n[\n  {\n    \"attribute\": \"END\",\n    \"difficulty\": 0,\n    \"description\": \"Fin de la historia.\"\n  }\n]\n```"
+    }
+}

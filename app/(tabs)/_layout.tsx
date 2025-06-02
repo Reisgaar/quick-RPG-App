@@ -1,45 +1,58 @@
+// REACT
+import React, { useMemo } from 'react';
+
+// EXPO
 import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+// CONTEXTS
+import { useAppSettings } from 'src/context/AppSettingsContext';
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+// TRANSLATIONS
+import { useTranslation } from 'react-i18next';
 
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
-    </Tabs>
-  );
+export default function TabsLayout() {
+    const { currentTheme } = useAppSettings();
+    const { t } = useTranslation();
+
+    const screens = useMemo(() => [
+        { name: 'home', title: t('tabs.home'), icon: 'home' },
+        { name: 'game', title: t('tabs.game'), icon: 'play-circle' },
+        { name: 'character', title: t('tabs.character'), icon: 'person' },
+    ], [t]);
+
+    return (
+        <Tabs
+            screenOptions={({ route }) => {
+                const screen = screens.find(s => s.name === route.name);
+                return {
+                    headerShown: false,
+                    tabBarActiveTintColor: '#5e60ce',
+                    tabBarInactiveTintColor: '#888',
+                    tabBarStyle: {
+                        paddingBottom: 0,
+                        height: 60,
+                        elevation: 0, // Android
+                        shadowOpacity: 0, // iOS
+                        backgroundColor: currentTheme.tabBackground,
+                        borderTopWidth: 1,
+                        borderBottomWidth: 1,
+                        borderColor: currentTheme.tabBorder
+                    },
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons
+                            name={(screen?.icon || 'ellipse') as keyof typeof Ionicons.glyphMap}
+                            size={size}
+                            color={color}
+                        />
+                    ),
+                    tabBarLabel: screen?.title,
+                };
+            }}
+        >
+            {screens.map(({ name }) => (
+                <Tabs.Screen key={name} name={name} />
+            ))}
+        </Tabs>
+    );
 }

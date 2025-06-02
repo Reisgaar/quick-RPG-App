@@ -3,8 +3,19 @@ const { defineConfig } = require('eslint/config');
 const expoConfig = require('eslint-config-expo/flat');
 
 module.exports = defineConfig([
-  expoConfig,
-  {
-    ignores: ['dist/*'],
-  },
+    expoConfig,
+    {
+        ignores: ['dist/*'],
+        settings: {
+            'import/resolver': {
+                typescript: {
+                    project: './tsconfig.json',
+                },
+                node: {
+                    paths: ['src'],
+                    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+                },
+            },
+        },
+    },
 ]);

@@ -1,0 +1,386 @@
+{
+    "appTitle": "Tale AI", 
+    "common": {
+        "cancel": "Deuseztatu",
+        "ok": "Onartu",
+        "back": "Atzera"
+    },
+    "apiKey": {
+        "title": "API kodea",
+        "addKey": "Sartu zure OpenAI (chat GPT) API kodea",
+        "info": "Kodea beharrezkoa da istorio sorkuntza aktibatu ahal izateko.",
+        "placeholder": "Zure OpenAI API kodea",
+        "saveButton": "Gorde API kodea",
+        "getKeyLink": "Eskuratu zure API kodea OpenAI plataforman",
+        "keyStorageNotice": "Zore API kodea soilik dispositiboan lokalki gordeko da eta ez da inoiz partekatuta izango.",
+        "emptyKeyAlert": "API kodea ezin da hutsik egon.",
+        "errorSaving": "Ezin izan da API kodea gorde.",
+        "savedAlert": "API kodea gordetu egin da!",
+        "loading": "Kargatzen...",
+        "openLinkError": "Ezin izan da esteka ireki."
+    },
+    "home": {
+        "title": "Ongi etorri",
+        "howTo": "Nola jolastu",
+        "description": "Hau IA bidez sortutako rol joko simulatzailea.",
+        "description2": "Jokoa, zure abentura erabaki antzeko jokoa izango da.",
+        "description3": "Lehendabizi, aurre-sortutako edo zuk sorturako pertsonaia nahi duzun aukeratu.",
+        "description4": "Ondoren gaia aukeratuko duzu eta azkenik pertsonaia.",
+        "shortStory": "Istorio motza",
+        "longStory": "Istorio luzea",
+        "pregeneratedCharacter": "Pertsonaia aukeratu",
+        "customCharacter": "Pertsonaia sortu"
+    },
+    "tabs": {
+        "home": "Hasiera",
+        "index": "Hasiera",
+        "game": "Jokoa",
+        "character": "Pertsonaia",
+        "inventory": "Inbentarioa",
+        "settings": "Doikuntzak"
+    },
+    "themeSelect": {
+        "title": "Aukeratu gai bat"
+    },
+    "settings": {
+        "title": "Doikuntzak",
+        "subtitle": "Zure jokoa hemen kontrolatu dezakezu.",
+        "apiKey": "API Kodea",
+        "modifyApiKey": "API kodea aldatu",
+        "clearApiKey": "API kodea ezabatu",
+        "clearApiKeyTitle": "Ezabaketa baieztatu",
+        "clearApiKeyConfirm": "API kodea ezabatu nahi duzu? IA erabiltzeko kodea berriz sartu beharko duzu.",
+        "cancel": "Deuseztatu",
+        "ok": "Onartu",
+        "language": "Hizkuntza",
+        "theme": "Ikuskera",
+        "light": "Argia",
+        "dark": "Iluna"
+    },
+    "language": {
+        "en": "English",
+        "es": "Español",
+        "eu": "Euskera"
+    },
+    "themes": {
+        "adventure": "Abenturak",
+        "comedy": "Komedia",
+        "crime": "Krimen",
+        "cyberpunk": "Cyberpunk",
+        "fantasy": "Fantasia",
+        "historical": "Historikoa",
+        "horror": "Beldurrezkoa",
+        "kids": "Haurrentzako",
+        "mystery": "Misterioa",
+        "romance": "Erromantikoa",
+        "scifi": "Zientzia fikzioa",
+        "western": "Western"
+    },
+    "characterSelect": {
+        "title": "Zure pertsonaia hautatu",
+        "enterName": "Jarri izena sure pertsonaiari",
+        "namePlaceholder": "Pertsonaiaren izena da...",
+        "confirm": "Onartu"
+    },
+    "characterCreation": {
+        "title": "Sortu zure pertsonaia",
+        "tip": "Zentzuz aukeratu zure trebetasunak.",
+        "enterName": "Jarri izena sure pertsonaiari",
+        "namePlaceholder": "Pertsonaiaren izena da...",
+        "pointsLeft": "Erabili gabeko puntuak: {{count}}",
+        "confirm": "Onartu"
+    },
+    "attributes": {
+        "strength": "Indarra",
+        "dexterity": "Trebezia",
+        "intelligence": "Inteligentzia",
+        "charisma": "Karisma",
+        "wisdom": "Jakinduria",
+        "constitution": "Gorpuzkera",
+        "STR": "Indarra",
+        "DEX": "Trebezia",
+        "INT": "Inteligentzia",
+        "CHA": "Karisma",
+        "WIS": "Jakinduria",
+        "CON": "Gorpuzkera"
+    },
+    "characters": {
+        "mainCharacter": "Protagonista",
+        "customCharacter": "Sortutako pertsonaia",
+        "warrior": {
+            "name": "Gerraria",
+            "description": "Borrokalari indartsu eta adoretsua."
+        },
+        "rogue": {
+            "name": "Pikaroa",
+            "description": "Lapur trebe eta azkarra."
+        },
+        "mage": {
+            "name": "Aztia",
+            "description": "Magia ikerle jakintsua."
+        },
+        "scientist": {
+            "name": "Zientzialaria",
+            "description": "Teknologia eta ikerkuntzan aditua."
+        },
+        "soldier": {
+            "name": "Gudaria",
+            "description": "Borrokan trebatutako espezialista."
+        },
+        "hacker": {
+            "name": "Hacker",
+            "description": "Informatika infiltzarioan aditua."
+        },
+        "detective": {
+            "name": "Detectibea",
+            "description": "Zentzu zorrotzdun detektibea."
+        },
+        "survivor": {
+            "name": "Biziraulea",
+            "description": "Azkarra eta zehatza."
+        },
+        "exorcist": {
+            "name": "Exorzista",
+            "description": "Naturaz gaindiko indarretan aditua."
+        },
+        "journalist": {
+            "name": "Kazetaria",
+            "description": "Ikerketaren bidez egia bilatzen du."
+        },
+        "suspect": {
+            "name": "Susmagarria",
+            "description": "Sekretoak dituen pertsona misteriotsua."
+        },
+        "knight": {
+            "name": "Zalduna",
+            "description": "Erreinuko jaun ohoretsua."
+        },
+        "scholar": {
+            "name": "Jakintsua",
+            "description": "Gai orotan aditua."
+        },
+        "spy": {
+            "name": "Espioia",
+            "description": "Itzaletan dabilen espioitzan aditua."
+        },
+        "explorer": {
+            "name": "Esploratzailea",
+            "description": "Ezezagunari aurre egiten dio antzinako mirariak bilatzeko."
+        },
+        "treasure_hunter": {
+            "name": "Altxor bilatzailea",
+            "description": "Diruzalea baina ausarta, beti aberastasunen atzetik."
+        },
+        "jungle_guide": {
+            "name": "Oihan gidaria",
+            "description": "Oihaneko bazter guztiak ezagutzen dituena."
+        },
+        "cursed_scholar": {
+            "name": "Jakintsu gaitzetsia",
+            "description": "Adimen handikoa baina madarikzio zahar batekin."
+        },
+        "reckless_pilot": {
+            "name": "Piloto ausarta",
+            "description": "Dena pilotatu dezake segurtasun zalantzagarriarekin."
+        },
+        "class_clown": {
+            "name": "Klaseko pailazoa",
+            "description": "Beti txantxetan, momentu okerretan ere."
+        },
+        "awkward_sidekick": {
+            "name": "Laguntzaile traketsa",
+            "description": "Istripuak maiz eragin arren, beti leiala."
+        },
+        "deadpan_sarcastic": {
+            "name": "Sarkastiko lehorra",
+            "description": "Besteek pentsatzen dutena esate du."
+        },
+        "unlucky_magician": {
+            "name": "Zorigaitzezko magoa",
+            "description": "Truku gehienak oker ateratzen zaizkio."
+        },
+        "overconfident_hero": {
+            "name": "Heroi harroputza",
+            "description": "Protagonista dela uste du, baina kaos sortzailea."
+        },
+        "hardened_detective": {
+            "name": "Detektibe gogorra",
+            "description": "Eguneko kale eta sekretu ilun guztiak ezagutzen ditu."
+        },
+        "rookie_officer": {
+            "name": "Ofizial hasiberria",
+            "description": "Lan berria, bere balioa erakutsi nahi du."
+        },
+        "criminal_mastermind": {
+            "name": "Kriminal azkarra",
+            "description": "Legetik hamar pauso aurrerago beti."
+        },
+        "corrupt_cop": {
+            "name": "Polizia ustela",
+            "description": "Arauen malgutasunarekin beti jolasean."
+        },
+        "informant": {
+            "name": "Berriemailea",
+            "description": "Beti entzuten, beti informazioa saltzen."
+        },
+        "netrunner": {
+            "name": "Netrunner",
+            "description": "Errealitate birtualetan nabigatzen duen hackerra."
+        },
+        "street_samurai": {
+            "name": "Kaleko samuraia",
+            "description": "Gudari mertzenario zibernetikoa."
+        },
+        "techie": {
+            "name": "Teknikoa",
+            "description": "Gailu aurreratuen ingeniaria."
+        },
+        "fixer": {
+            "name": "Fixer",
+            "description": "Kalean trebea eta negozio egilea."
+        },
+        "cyber_ghost": {
+            "name": "Mamu zibernetikoa",
+            "description": "Teknologia eta gogo artean galduta dagoena."
+        },
+        "ranger": {
+            "name": "Esploratzailea",
+            "description": "Arkuarekin eta miaketan aditua."
+        },
+        "bard": {
+            "name": "Bardoa",
+            "description": "Antzezle karismaduna eta abenturazalea."
+        },
+        "inventor": {
+            "name": "Asmatzailea",
+            "description": "Berrikuntza historikoen aitzindaria."
+        },
+        "gladiator": {
+            "name": "Gladiadorea",
+            "description": "Arenetan borrokarako gerlari sutsua."
+        },
+        "medium": {
+            "name": "Mediuma",
+            "description": "Hildakoekin komunikatzen dena."
+        },
+        "occultist": {
+            "name": "Okultista",
+            "description": "Ezagutza ezkutuen praktikatzailea."
+        },
+        "brainiac": {
+            "name": "Orojakilea",
+            "description": "Gai guztietatik dena dakiena."
+        },
+        "prankster": {
+            "name": "Adarjolea",
+            "description": "Beti txantxetan dabilena."
+        },
+        "athlete": {
+            "name": "Atleta",
+            "description": "Azkarra eta indartsua."
+        },
+        "artist": {
+            "name": "Artista",
+            "description": "Imaginaziotik mundua marrazten duena."
+        },
+        "forensic": {
+            "name": "Forentsea",
+            "description": "Ebidentziak zehaztasunez aztertzen dituena."
+        },
+        "heartbreaker": {
+            "name": "Seduktorea",
+            "description": "Maitale magnetiko eta ederra."
+        },
+        "hopeless_romantic": {
+            "name": "Romantiko itsua",
+            "description": "Maitasun eta patuan sakonki sinesten duena."
+        },
+        "poet": {
+            "name": "Poeta",
+            "description": "Hitzez eta bertsoz maitasuna adierazten duena."
+        },
+        "charming_stranger": {
+            "name": "Ezezagun xarmagarria",
+            "description": "Irribarre misteriotsu eta distiratsua duena."
+        },
+        "love_fighter": {
+            "name": "Maitasun borrokalaria",
+            "description": "Maitatzen duenarengatik borrokatzen duena."
+        },
+        "cyborg": {
+            "name": "Ziborg",
+            "description": "Indar handia duen erdi gizakia erdi makina."
+        },
+        "pilot": {
+            "name": "Pilotoa",
+            "description": "Espaziontzi piloto azkarra eta erreflexuduna."
+        },
+        "gunslinger": {
+            "name": "Pistola azkarra",
+            "description": "Tiratzaile zorrotzdun forajido edo heroia."
+        },
+        "bounty_hunter": {
+            "name": "Sari-ehiztaria",
+            "description": "Iheslariak jarraitu eta harrapatzen dituena."
+        },
+        "sheriff": {
+            "name": "Sheriff",
+            "description": "Justizia bermatzen du mundu basati honetan."
+        },
+        "saloon_star": {
+            "name": "Saloiko izarra",
+            "description": "Antzezle karismadun eta trebea."
+        },
+        "tracker": {
+            "name": "Aztarnaria",
+            "description": "Lurra ondo baino hobeto ezagutzen duena."
+        }
+    },
+    "character": {
+        "title": "Pertsonaia mota",
+        "selectPregen": "Aukeratu pertsonaia zerrenda batetik:",
+        "create": "Eraiki zurea nahi duzun estatistikeking:"
+    },
+    "inventory": {
+        "title": "Inbentarioa",
+        "noItems": "Ez daukazu objekturik.",
+        "removeItemTitle": "Objektua ezabatu",
+        "removeItemConfirm": "\"{{item}}\" zure inbentariotik ezabatu nahi duzu?"
+    },
+    "game": {
+        "title": "Istorioa",
+        "loading": "Abentura kargatzen...",
+        "loadingKey": "API kodea kargatzen...",
+        "noApiKey": "API kodea ez da zehaztu. Joan doikuntzetara kodea sartzeko.",
+        "generate": "Istorio berria sortu",
+        "errorApi": "Errorea OpenAI API kodean",
+        "errorNetwork": "Sare errorea",
+        "tryAgain": "Saiatu berriz",
+        "selectActionAgain": "Aukeratu akzio bat berriro",
+        "reset": "Berrabiarazi",
+        "result": "Emaitza",
+        "diceRoll": "Jaurtitzea",
+        "success": "Arrakasta",
+        "failure": "Porrota",
+        "difficulty": "Zailtasuna",
+        "total": "Guztira",
+        "action": "Ekintza",
+        "remainingDecisions": "Erabakiak bukatzeko",
+        "theEnd": "Amaiera",
+        "thanksForPlaying": "Mila esker jolasteagatik.",
+        "exit": "Irten",
+        "exitMessage": "Hasierara bueltatu nahi al duzu?"
+    },
+    "chatGpt": {
+        "systemMessage": "Rol joko interaktibo baten istorio sortzailea zara.",
+        "userPromptStart": "Pertsonaiaren izena {{name}} da, bera {{class}} da, eta trebezi hauek ditu: {{attributes}}. '{{theme}}' gaia duen istorio batean sartuta dago. Hasi istorio bat honetan oinarrituta.\n\nSortutako mundu, erreinu edo hiriaren izena {{initialLeter}} letraz hasiko da eta {{containingLetters}} letrak izan behar ditu izenean, ez da beharrezkoa ordenatutak edo elkarrekin egon daitezen.\n\nIstorioak guztira {{totalDecisions}} zati izango ditu.\n\nIstorio garapenaren erritmoa eraman dezazun, 5 akto dituen estruktura dramatiko erabiliko dugu (hasiera, gorako akzioa, klimax, beherako akzioa eta bukaera).\n\nHau izango da {{totalDecisions}} zatietatik lehenengoa, beraz, utzi lekua istorioaren garapena jarraitzeko.",
+        "userPromptAct1": "Jarraitu istorioa, pertsonaiak erabaki du: {{decision}}. Akzioaren emaitza izan da: {{result}}, dado jaurtitzean {{roll}} atera du.\n\nOraingo zatia da {{promptsRemaining}}, gogoratu guztira {{totalDecisions}} zati direla.\n\n Oran gauden aktua da: hasiera: trama, pertsonaiak eta istorioaren ingurua aurkezten da. Eszena eta konlfikto nagusia ezartzen dira.",
+        "userPromptAct2": "Jarraitu istorioa, pertsonaiak erabaki du: {{decision}}. Akzioaren emaitza izan da: {{result}}, dado jaurtitzean {{roll}} atera du.\n\nOraingo zatia da {{promptsRemaining}}, gogoratu guztira {{totalDecisions}} zati direla.\n\n Oran gauden aktua da: gorako akzioa: istorioa aurrera doa, zailtasunak sartuz eta konflikto nagusia garatzen. Tentsioa gora doa informazioa lortzen den heinean.",
+        "userPromptAct3": "Jarraitu istorioa, pertsonaiak erabaki du: {{decision}}. Akzioaren emaitza izan da: {{result}}, dado jaurtitzean {{roll}} atera du.\n\nOraingo zatia da {{promptsRemaining}}, gogoratu guztira {{totalDecisions}} zati direla.\n\n Oran gauden aktua da: klimax: istorioaren punto gorena, tentsio haundiena hemen dago eta konflikto nagusia konpontzen da.",
+        "userPromptAct4": "Jarraitu istorioa, pertsonaiak erabaki du: {{decision}}. Akzioaren emaitza izan da: {{result}}, dado jaurtitzean {{roll}} atera du.\n\nOraingo zatia da {{promptsRemaining}}, gogoratu guztira {{totalDecisions}} zati direla.\n\n Oran gauden aktua da: beherako akzioa: aurreko aktuaren ondorioak garatzen dira, tentsioa behera doa eta konfliktoaren ramifikazioak agertzen dira.",
+        "userPromptAct5": "Jarraitu istorioa, pertsonaiak erabaki du: {{decision}}. Akzioaren emaitza izan da: {{result}}, dado jaurtitzean {{roll}} atera du.\n\nOraingo zatia da {{promptsRemaining}}, gogoratu guztira {{totalDecisions}} zati direla.\n\n Oran gauden aktua da: bukaera: istorioa itxi egiten da, konflikto nagusia ere ixten da eta azkeneko emaitza agertzen da.",
+        "userPrompt": "\n\nEz itzatzu gehitu tituluak edo beste holakoak... bakarrik testu narratiboa. Testu narratibo honen bukaeran, 2 edo 3 aukera dituan erabaki bat jarri pertsonaiari JSON formatuan eta eskema honekin:\n\n```json\n{\n  \"options\": [\n    {\n      \"attribute\": \"XXX\",\n      \"difficulty\": 8-16,\n      \"description\": \"Akzioaren deskribapena\"\n    }\n  ]\n}\n```\n\nTrabetasunak dira STR (indarra), DEX (trebezia), CON (gorpuzkera), WIS (jakinduria), INT (inteligentzia) y CHA (karisma).\n\nZailtasuna akzioaren parekoa izan beharko da, 8 akzio erraza da, eta 16 oso zaila.\n\nEz ezazu testuan aukerak erakutsi, bakarri sartu itzazu JSON blokean justu narrazio testuaren ondoren.",
+        "userPromptEnd": "Hau da azkeneko zatia, istorioa bukatu behar duzu amaiera esanguratsu eta nabarmen batekin. Kasu honeta, ez itzazu aukera gehiago eman. Bukaerako JSON izango duen itxura da:\n\n```json\n[\n  {\n    \"attribute\": \"END\",\n    \"difficulty\": 0,\n    \"description\": \"Amaiera.\"\n  }\n]\n```"
+    }
+}
+  
