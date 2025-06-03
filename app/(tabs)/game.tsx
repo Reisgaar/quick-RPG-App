@@ -29,7 +29,7 @@ import CustomButton from 'src/components/common/CustomButton';
 export default function GameScreen() {
     const { t } = useTranslation();
     const router = useRouter();
-    const chatModels = ['gpt-3.5-turbo', 'gpt-4o' , 'gpt-4-turbo'];
+    const chatModels = ['gpt-3.5-turbo' , 'gpt-4o-mini', 'gpt-4o'];
 
     const { currentTheme } = useAppSettings();
     const { apiKey, loading: keyLoading } = useOpenAIKey();
@@ -131,7 +131,7 @@ export default function GameScreen() {
             { role: 'user', content: userMessage },
         ];
     
-        const body = { model, messages, max_tokens: 1000 };
+        const body = { model, messages, max_tokens: 500 };
         const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` };
     
         try {
